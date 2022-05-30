@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Meu Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- navbar -->
+  <header id="navbar">
+    <img src="./img/foto.png" alt="Estrela Ninja">
+    <h2>Marconys Pinheiro</h2>
+    <nav>
+      <ul id="navbar-list">
+        <li><a href="#skills-section">Sobre</a></li>
+        <li><a href="#jobs-section">Projetos</a></li>
+        <li><a href="#contato-section">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+  
+      <ul class="menu__box">
+        <li><a class="menu__item" href="#skills-section">Sobre</a></li>
+        <li><a class="menu__item" href="#jobs-section">Projetos</a></li>
+        <li><a class="menu__item" href="#contato-section">Contato</a></li>        
+      </ul>
+    </div>
+  </header>
+  <!-- fim navbar -->
+  <main>
+    <!-- banner início -->
+    <div id="main-banner">
+      <div id="banner-info">
+        <h1>Olá, eu sou Marconys Pinheiro</h1>
+        <img src="./img/batea.jpg" alt="Perfil batera">
+        <p>O batera da programação</p>
+      </div>
+    </div>
+    <!-- banner fim -->
+    <!-- about inicio -->
+    <section id="about-section">
+      <h2>Sobre o meu jeito batera de ser</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum enim sit amet massa tempor tempor. Maecenas
+        cursus posuere dolor, at laoreet leo sodales non. Quisque id ante a augue rutrum sagittis. Curabitur molestie
+        enim diam, nec ultrices urna feugiat ut. Vestibulum ut lorem nec urna semper imperdiet iaculis sit amet lectus.
+      </p>
+    </section>
+    <!-- about fim -->
+  </main>
+  <!-- skills inicio -->
+  <section id="skills-section">
+    <div class="container">
+      <div class="skills-container esquerda">
+        <img src="./img/caixa.png" alt="caixa">
+        <h3>Desenvolvimento</h3>
+        <p>Minha maior paixão é desenvolver projetos web, desktop e mobile</p>
+        <p class="subtitle">Linguagens que utilizo:</p>
+        <p>HTML, CSS, JS, PHP, C++ e C#</p>
+        <p class="subtitle">Projetos que posso desenvolver:</p>
+        <p>E-commerces, Sites institucionais, Aplicativos para desktop e mobile</p>
+      </div>
+      <div class="skills-container central">
+        <img src="./img/drummer.png" alt="drummer">
+        <h3>Criação</h3>
+        <p>Atuo também na análise e gerenciamento de projetos</p>
+        <p class="subtitle">Meus conhecimentos:</p>
+        <p>Assistente de Suporte e Manutenção de Computadores, Assistente de Operação de Redes de Computadores,
+          Assistente de Desenvolvimento de Aplicativos
+          Computacionais
+        </p>
+      </div>
+      <div class="skills-container direita">
+        <img src="./img/prato.png" alt="Weapons">
+        <h3>Infraestrutura</h3>
+        <p>Posso Planejar e executar a instalação e manutenção
+          de redes locais de computadores, assim como executar a instalação, configuração
+          e monitoramento de servidores..</p>
+        <p class="subtitle">Serviços de Cloud:</p>
+        <p>AWS, Google Cloud, Microsoft Azure</p>
+        <p class="subtitle">O que posso fazer:</p>
+        <p>Executar os processos de codificação manutenção
+          e documentação de aplicativos computacionais
+          para desktop, dispositivos móveis e internet.</p>
+      </div>
+    </div>
+  </section>
+  <!-- skills fim -->
+  <!-- jobs inicio -->
+  <section id="jobs-section">
+    <h2>Veja meus últimos trabalhos:</h2>
+    <p>Aqui estão os meus trabalhos mais rescentes, para ver todos <a href="https://github.com/marconys">clique aqui.</a></p>
+    <div class="job-container">
+      <div class="job-box proj1"></div>
+      <div class="job-box proj2"></div>
+      <div class="job-box proj3"></div>
+    </div>
+    <div class="job-container">
+      <div class="job-box proj2"></div>
+      <div class="job-box proj3"></div>
+      <div class="job-box proj1"></div>
+    </div>
+  </section>
+  <!-- jobs fim -->
+  <!-- footer inicio -->
+  <footer>
+    <section id="contato-section">
+      <h2>Me mande uma mensagem</h2>
+      <p>Caso queira falar sobre algum projeto, me contratar para algum serviço, ou falar sobre bateria...</p>
+      <img src="./img/foto.png" alt="Perfil foto">
+      <form action="" method="">
+        <input type="text" name="name" placeholder="Seu nome">
+        <input type="email" name="email" placeholder="Seu e-mail">
+        <textarea name="msg" placeholder="Digite uma mensagem"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+      <p>Desenvolvido por <span class="detail">Marconys Pinheiro - AlunoTI91</span></p>
+    </section>
+    
+  </footer>
+  <!-- footer fim -->
+</body>
+
+</html>
