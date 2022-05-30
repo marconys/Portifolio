@@ -306,10 +306,13 @@ footer .detail {
   #banner-info{
     display: grid;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #banner-info img{
-    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #skills-section .container {
