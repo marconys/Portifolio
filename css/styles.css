@@ -304,16 +304,15 @@ footer .detail {
   }
 
   #banner-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #banner-info p{
-    margin-left: -20px;
+  #banner-info img{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #skills-section .container {
