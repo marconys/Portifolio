@@ -303,6 +303,15 @@ footer .detail {
     display: none;
   }
 
+  #banner-info{
+    display: grid;
+    align-items: center;
+  }
+
+  #banner-info img{
+    margin-left: 60px;
+  }
+
   #skills-section .container {
     display: grid;
     grid-template: 20vh 60vh 20vh;
