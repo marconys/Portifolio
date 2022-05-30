@@ -281,7 +281,7 @@ footer .detail {
   display: none;
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:745px) {
 
   nav #navbar-list {
     display: none;
