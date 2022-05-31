@@ -13,6 +13,26 @@ h2 {
   font-size: 30px;
 }
 
+html{
+  scroll-behavior: smooth;
+  }
+
+::-webkit-scrollbar{
+
+  background-color: rgba(0, 0, 0, 0.753);
+
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background-color:#ED1E24;
+
+  border-radius: 25px;
+
+}
+
 /* navbar */
 #navbar {
   background-color: #ED1E24;
