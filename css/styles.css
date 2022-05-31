@@ -348,15 +348,19 @@ footer .detail {
     display: none;
   }
 
-  #banner-info{
-    margin-left: 70px;
+  #main-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  #banner-info #banner-info{
-    display: grid;
+   #banner-info{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 80px;
+    
   }  
 
   #skills-section .container {
