@@ -443,7 +443,8 @@ footer .detail {
   .job1-container {
     width: 300px;
     text-align: center;
-    overflow: hidden;       
+    overflow: hidden; 
+    margin-top: 10px;      
   }
 
   .container-box {
