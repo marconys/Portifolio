@@ -460,15 +460,15 @@ footer .detail {
   }
 
   .container-box::-webkit-scrollbar-thumb {
-    background: #000;
+    background: #ED1E24;
     border-radius: 10px;
   }
 
   .container-box::-webkit-scrollbar-track {
-    background: transparent;
+    background: #ccc;
   }
 
-  .container-box>div {
+  .container-box div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 300px;
