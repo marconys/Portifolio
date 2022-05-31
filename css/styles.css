@@ -425,10 +425,16 @@ footer .detail {
     color: #ED1E24;
   }
 
+  .jobs1-boxmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .job1-container {
     width: 300px;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden;    
   }
 
   .container-box {
