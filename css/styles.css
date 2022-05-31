@@ -8,11 +8,11 @@ body {
   font-family: Roboto;
 }
 
-html{
+html {
   scroll-behavior: smooth;
-  }
+}
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 
   background-color: rgba(0, 0, 0, 0.753);
 
@@ -20,9 +20,9 @@ html{
 
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
 
-  background-color:#ED1E24;
+  background-color: #ED1E24;
 
   border-radius: 25px;
 
@@ -44,7 +44,7 @@ html{
 #navbar ul,
 #navbar-list li,
 #navbar nav {
-  display: inline-block;  
+  display: inline-block;
 }
 
 #navbar h2 {
@@ -54,7 +54,7 @@ html{
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 30px;
-  
+
 }
 
 #navbar img {
@@ -100,7 +100,7 @@ html{
   background-repeat: no-repeat;
 }
 
-#main-banner h1{
+#main-banner h1 {
   font-family: 'Roboto';
   font-size: 30px;
   font-weight: 700;
@@ -174,7 +174,7 @@ html{
   justify-content: center;
 }
 
-#skills-section .container h3{
+#skills-section .container h3 {
   font-family: 'Roboto';
   font-weight: 700;
 }
@@ -276,6 +276,10 @@ html{
   margin-left: 0;
 }
 
+#jobs1-section {
+  display: none;
+}
+
 /* footer */
 
 footer {
@@ -291,7 +295,7 @@ footer img {
   border-radius: 60px;
 }
 
-footer h2{
+footer h2 {
   font-family: 'Roboto';
   font-weight: 700;
 }
@@ -348,23 +352,23 @@ footer .detail {
     display: none;
   }
 
-  #main-banner{
+  #main-banner {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-   #banner-info{
+  #banner-info {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    width: 100%;     
-  }  
+    align-items: center;
+    width: 100%;
+  }
 
-  #banner-info p{    
+  #banner-info p {
     border-radius: 10px;
-  }  
+  }
 
   #skills-section .container {
     display: grid;
@@ -388,16 +392,115 @@ footer .detail {
   }
 
   #jobs-section {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .job-container {
     display: none;
 
+  }
+
+  #jobs1-section h2 {
+    color: #ED1E24;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+
+  #jobs1-section p {
+    margin-bottom: 20px;
+  }
+
+  #jobs1-section a {
+    font-weight: bold;
+    color: #ED1E24;
+  }
+
+  #jobs1-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+
+  }
+
+  .job1-container {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .container-box {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .container-box::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .container-box::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+  }
+
+  .container-box::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .container-box>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    justify-content: center;
+  }
+
+  .container-box img {
+    z-index: -1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .job1-container a {
+    display: inline-flex;
+    width: 1.5em;
+    height: 1.5em;
+    background: #ccc;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 0 0.5em 0;
+    position: relative;
+  }
+
+  .job1-container>a:active {
+    top: 1px;
+  }
+
+  .job1-container>a:focus {
+    background: #000;
   }
 
   .hamburger-menu {
