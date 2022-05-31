@@ -1,16 +1,11 @@
-/* geral */
-body,
-p,
-h1,
-h2,
-input,
-textarea {
-  margin: 0;
-  font-family: Roboto;
-}
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-h2 {
-  font-size: 30px;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
 
 html{
@@ -49,13 +44,17 @@ html{
 #navbar ul,
 #navbar-list li,
 #navbar nav {
-  display: inline-block;
+  display: inline-block;  
 }
 
 #navbar h2 {
   margin: 0;
   line-height: 60px;
   margin-left: 55px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 30px;
+  
 }
 
 #navbar img {
@@ -77,6 +76,8 @@ html{
 
 #navbar li {
   margin: 0 10px;
+  font-family: 'Roboto';
+  font-weight: 700;
 }
 
 #navbar-list li a {
@@ -99,6 +100,12 @@ html{
   background-repeat: no-repeat;
 }
 
+#main-banner h1{
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 700;
+}
+
 #banner-info {
   width: 40%;
   margin-right: auto;
@@ -118,7 +125,7 @@ html{
 
 #banner-info p {
   background-color: #ED1E24;
-  font-weight: bold;
+  font-weight: 700;
   width: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -136,7 +143,10 @@ html{
 }
 
 #about-section h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
 }
 
 #about-section p {
@@ -162,6 +172,11 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+#skills-section .container h3{
+  font-family: 'Roboto';
+  font-weight: 700;
 }
 
 .skills-container {
@@ -212,6 +227,8 @@ html{
 #jobs-section h2 {
   color: #ED1E24;
   margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-weight: 700;
 }
 
 #jobs-section p {
@@ -274,6 +291,11 @@ footer img {
   border-radius: 60px;
 }
 
+footer h2{
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
 footer p {
   margin-top: 25px;
 }
@@ -326,17 +348,12 @@ footer .detail {
     display: none;
   }
 
-  #banner-info{
+  #banner-info #banner-info{
     display: grid;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #banner-info img{
-    margin-left: auto;
-    margin-right: auto;
-  }
+  }  
 
   #skills-section .container {
     display: grid;
