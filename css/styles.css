@@ -348,6 +348,10 @@ footer .detail {
     display: none;
   }
 
+  #banner-info{
+    margin-left: 70px;
+  }
+
   #banner-info #banner-info{
     display: grid;
     align-items: center;
