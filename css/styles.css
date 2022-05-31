@@ -363,7 +363,8 @@ footer .detail {
   }  
 
   #banner-info p{
-    margin-left: 50px;
+    /*margin-left: 50px;*/
+    border-radius: 10px;
   }  
 
   #skills-section .container {
