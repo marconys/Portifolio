@@ -362,7 +362,9 @@ footer .detail {
     width: 100%;     
   }  
 
-  
+  #banner-info p{
+    margin-left: 50px;
+  }  
 
   #skills-section .container {
     display: grid;
