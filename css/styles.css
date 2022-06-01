@@ -310,7 +310,7 @@ footer form {
   margin-right: auto;
 }
 
-footer input,
+footer input, footer button,
 footer textarea {
   border: none;
   padding: 15px;
@@ -320,11 +320,25 @@ footer textarea {
   display: block;
 }
 
-#enviar{
-  box-shadow: 6px 8px 10px #000;
-}
 footer .detail {
   font-weight: bold;
+}
+
+#enviar{
+  box-shadow: 6px 8px 10px #000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #000;
+
+}
+
+#enviar a{
+   text-decoration: none;
+}
+
+#enviar a:hover{  
+  border-bottom: 1px solid #000;
+
 }
 
 /*Responsividade*/
