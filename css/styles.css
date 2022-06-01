@@ -320,6 +320,9 @@ footer textarea {
   display: block;
 }
 
+#enviar{
+  box-shadow: 6px 8px 10px #000;
+}
 footer .detail {
   font-weight: bold;
 }
