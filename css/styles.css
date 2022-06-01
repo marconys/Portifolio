@@ -28,6 +28,25 @@ html {
 
 }
 
+.whatsapp-link{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  margin-left: 20px;
+}
+
+.fa-whatsapp{
+  margin-top: 10px;
+}
+
 /* navbar */
 #navbar {
   background-color: #ED1E24;
@@ -331,12 +350,7 @@ footer .detail {
   color: #000;
 
 }
-
-#enviar a{
-   text-decoration: none;
-}
-
-#enviar a:hover{  
+#enviar:hover{  
   border-bottom: 1px solid #000;
 
 }
@@ -348,6 +362,21 @@ footer .detail {
 }
 
 @media screen and (max-width:745px) {
+
+  .whatsapp-link{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 370px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    margin-left: 20px;
+  }
 
   nav #navbar-list {
     display: none;
