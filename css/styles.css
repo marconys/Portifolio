@@ -345,7 +345,7 @@ footer .detail {
 }
 
 #enviar{
-  box-shadow: 6px 8px 10px #000;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.44);
   font-family: 'Roboto';
   font-weight: 700;
   color: #000;
