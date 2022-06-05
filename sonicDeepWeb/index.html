@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/Script.js" defer></script>
+    <script src="./js/Placar.js"></script>
+
+    <title>Sonic DeepWeb</title>
+</head>
+
+<body>
+    <div class="game-board">        
+        
+        <div class="nuvens">
+            <img src="./medea/nuvem.png" alt="" class="nuvem2">
+            <img src="./medea/nuvem.png" alt="" class="nuvem1">
+            <img src="./medea/nuvem.png" alt="" class="nuvem">
+        </div>
+
+        <img src="./medea/bruxa.gif" alt="" class="bruxa">
+        <img src="./medea/sonicdeepweb.gif" alt="" class="sonic">
+        <img src="./medea/vilaodeepweb.gif" alt="" class="vilao">
+        
+        <div id="iniciar">
+            <botton class="iniciar">PLAY</botton>
+        </div>
+
+        <canvas id="game-board">
+
+        </canvas>
+
+        <script type="text/javascript">
+
+            let pontos = 0;
+
+            let canvas = document.getElementById("game-board");
+            let ctx = canvas.getContext('2d');
+
+
+
+            const placar = new Placar(ctx);
+
+            const game = () => {
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                placar.desenhar();
+
+                requestAnimationFrame(game);
+            };
+
+            requestAnimationFrame(game);
+        </script>
+        
+    </div>
+
+</body>
+
+</html>

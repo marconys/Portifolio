@@ -29,7 +29,7 @@ html {
 
 }
 
-.whatsapp-link{
+.whatsapp-link {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -44,7 +44,7 @@ html {
   margin-left: 20px;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
   margin-top: 10px;
 }
 
@@ -280,9 +280,18 @@ html {
   border-bottom: 2px solid #ED1E24;
 }
 
-.proj1 {
-  background: url('../img/robot.png') no-repeat;
+.slide1 {
+  background: url('../img/sonicdeepweb.gif') no-repeat;
   background-size: 330px;
+}
+
+.slide1 h1 {
+  position: absolute;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 700;
+  margin: 300px 20px;
+
 }
 
 .proj2 {
@@ -294,6 +303,20 @@ html {
   background: url('../img/aviao.png') no-repeat;
   background-size: 330px;
   margin-left: 0;
+}
+
+.slide6{
+  background: url('../img/pingpong.PNG') no-repeat;
+  background-size: 330px;
+}
+
+.slide6 h1 {
+  position: absolute;
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 700;
+  margin: 300px 60px;
+
 }
 
 #jobs1-section {
@@ -330,7 +353,8 @@ footer form {
   margin-right: auto;
 }
 
-footer input, footer button,
+footer input,
+footer button,
 footer textarea {
   border: none;
   padding: 15px;
@@ -344,14 +368,15 @@ footer .detail {
   font-weight: bold;
 }
 
-#enviar{
+#enviar {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.44);
   font-family: 'Roboto';
   font-weight: 700;
   color: #000;
 
 }
-#enviar:hover{  
+
+#enviar:hover {
   border-bottom: 1px solid #000;
 
 }
@@ -364,7 +389,7 @@ footer .detail {
 
 @media screen and (max-width:745px) {
 
-  .whatsapp-link{
+  .whatsapp-link {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -452,7 +477,7 @@ footer .detail {
     text-align: center;
     padding-top: 50px;
     margin-bottom: 20px;
-    
+
 
   }
 
@@ -461,7 +486,7 @@ footer .detail {
     margin-bottom: 10px;
     font-family: 'Roboto';
     font-weight: 700;
-    
+
   }
 
   #jobs1-section p {
@@ -473,7 +498,7 @@ footer .detail {
     color: #ED1E24;
   }
 
-  .jobs1-boxmain{
+  .jobs1-boxmain {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -482,16 +507,16 @@ footer .detail {
     background-image: url("../img/montains.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; 
-    border-radius: 10px;   
-       
+    background-position: center;
+    border-radius: 10px;
+
   }
 
   .job1-container {
     width: 300px;
     text-align: center;
-    overflow: hidden; 
-    margin-top: 10px;      
+    overflow: hidden;
+    margin-top: 10px;
   }
 
   .container-box {
@@ -536,7 +561,7 @@ footer .detail {
 
   .container-box img {
     z-index: -1;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -565,6 +590,22 @@ footer .detail {
 
   .job1-container>a:focus {
     background: #000;
+  }
+
+  #slide-1 h1 {
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    bottom: 10px;
+  }
+
+  #slide-6 h1{
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    bottom: 10px;
   }
 
   .hamburger-menu {
