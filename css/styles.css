@@ -307,6 +307,7 @@ html {
 
 .slide6{
   background: url('../img/pingpong.PNG') no-repeat;
+  background-position: center;
   background-size: 330px;
 }
 
@@ -386,6 +387,8 @@ footer .detail {
 .hamburger-menu {
   display: none;
 }
+
+/*Resposivo*/
 
 @media screen and (max-width:745px) {
 
@@ -561,7 +564,7 @@ footer .detail {
 
   .container-box img {
     z-index: -1;
-    object-fit: contain;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -600,12 +603,21 @@ footer .detail {
     bottom: 10px;
   }
 
+  #slide-1 img{
+    object-fit: contain;
+  }
+
   #slide-6 h1{
     position: absolute;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 15px;
     bottom: 10px;
+  }
+
+  #slide-6 img{
+    object-fit: contain;
+    bottom: 300px;
   }
 
   .hamburger-menu {
