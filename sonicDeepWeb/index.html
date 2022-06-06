@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="game-board">        
-        
+    <div class="game-board">
+
         <div class="nuvens">
             <img src="./medea/nuvem.png" alt="" class="nuvem2">
             <img src="./medea/nuvem.png" alt="" class="nuvem1">
@@ -25,14 +25,19 @@
         <img src="./medea/bruxa.gif" alt="" class="bruxa">
         <img src="./medea/sonicdeepweb.gif" alt="" class="sonic">
         <img src="./medea/vilaodeepweb.gif" alt="" class="vilao">
-        
-        <div id="iniciar">
-            <botton class="iniciar">PLAY</botton>
+
+        <div id="cabecalho">
+
+            <div id="iniciar">
+                <botton class="iniciar">PLAY</botton>
+            </div>
+
+            <canvas id="game-board">
+
+            </canvas>
+
         </div>
 
-        <canvas id="game-board">
-
-        </canvas>
 
         <script type="text/javascript">
 
@@ -56,7 +61,7 @@
 
             requestAnimationFrame(game);
         </script>
-        
+
     </div>
 
 </body>
