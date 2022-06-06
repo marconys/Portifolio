@@ -47,6 +47,6 @@ const loop = setInterval(function colisao(ctx) {
 
 
 // addEventListener para captura de eventos / passando como parametros o evento e a função
-document.addEventListener('keydown', jump);
+tela();
 
 
