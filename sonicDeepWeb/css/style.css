@@ -74,6 +74,10 @@ canvas {
     animation: sonic-jump 500ms ease-out;
 }
 
+.jump2 {
+    animation: sonic-jump 500ms ease-out;
+}
+
 .bruxa {
     position: absolute;
     width: 100px;
