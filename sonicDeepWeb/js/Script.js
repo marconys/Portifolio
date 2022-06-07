@@ -47,16 +47,18 @@ if (window.matchMedia("(min-width:745px)").matches) {
 
         if (vilaoPosition <= 190 && vilaoPosition > 0 && sonicPosition < 160) {
             //para o jogo
-            vilao.style.animation = 'none';
-            sonic.style.animation = 'none';
+            vilao.style.animation = 'none';            
 
             vilao.style.left = `${vilaoPosition}px`;
-            sonic.style.left = `${50}px`;
-
+            sonic.style.left = `${1}px`;                   
+            
             // Altera o boneco do sonic
             sonic.src = "./medea/sonicshutdown.gif";
             sonic.style.width = "60px";
-            sonic.style.bottom = "-1px"
+            sonic.style.bottom = "-2px"   
+            sonic.classList.remove('jump'); 
+            sonic.classList.add('sonicdead');        
+            sonic.style.animation = 'animation: sonic-dead 20s';
 
             clearInterval(loop);
         };
@@ -96,15 +98,18 @@ else {
         if (vilaoPosition <= 50 && vilaoPosition > 0 && sonicPosition < 160) {
             //para o jogo
             vilao.style.animation = 'none';
-            sonic.style.animation = 'none';
+            
 
             vilao.style.left = `${vilaoPosition}px`;
-            sonic.style.left = `${0}px`;
+            sonic.style.left = `${1}px`;
 
             // Altera o boneco do sonic
             sonic.src = "./medea/sonicshutdown.gif";
             sonic.style.width = "60px";
-            sonic.style.bottom = "-1px"
+            sonic.style.bottom = "-2px"
+            sonic.classList.remove('jump'); 
+            sonic.classList.add('sonicdead');        
+            sonic.style.animation = 'animation: sonic-dead 20s';
 
             clearInterval(loop);
         };

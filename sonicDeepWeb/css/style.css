@@ -78,6 +78,11 @@ canvas {
     animation: sonic-jump 500ms ease-out;
 }
 
+.sonicdead{
+
+    animation: sonic-dead 20s;
+}
+
 
 .bruxa {
     position: absolute;
@@ -162,6 +167,16 @@ canvas {
 
     100% {
         bottom: 0px;
+    }
+}
+
+@keyframes sonic-dead{
+    from {
+        left: 1px;
+    }
+
+    to {
+        left: 100%;
     }
 }
 
