@@ -24,3 +24,7 @@ class Placar {
         
 };
 
+function pontuar(){
+    
+}
+

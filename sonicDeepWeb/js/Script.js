@@ -6,13 +6,13 @@ const vilao = document.querySelector('.vilao');
 let btn = document.querySelector(".iniciar");
 if (window.matchMedia("(min-width:745px)").matches) {
     /* a viewport tem pelo menos 745 pixels de largura */
-    document.addEventListener("click", function() {
+    btn.addEventListener("click", function() {
 
         location.reload();
     });
 } else {
     /* a viewport menos que 800 pixels de largura */
-    document.addEventListener("touchstart", function() {
+    btn.addEventListener("touchstart", function() {
 
         location.reload();
     });
@@ -20,14 +20,17 @@ if (window.matchMedia("(min-width:745px)").matches) {
 
 //função jump
 const jump = () => {
-    sonic.classList.add('jump');
-
+    sonic.classList.add('jump');  
+    
+    pontos += 10;
+        
     setTimeout(() => {
 
         sonic.classList.remove('jump');
 
-    }, 500);
+    }, 500);      
 
+    
 };
 
 // capturar colisão entre os elementos
@@ -36,26 +39,25 @@ const loop = setInterval(function colisao(ctx) {
 
     const vilaoPosition = vilao.offsetLeft;
     const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
-    console.log(sonicPosition)
+    
 
     if (vilaoPosition <= 190 && vilaoPosition > 0 && sonicPosition <160) {
         //para o jogo
         vilao.style.animation = 'none';
-        vilao.style.left = `${vilaoPosition}px`;        
-       
+        vilao.style.left = `${vilaoPosition}px`;
+        sonic.style.left = `${50}px`;
+        
+        sonic.src="./medea/sonicshutdown.gif";
+        sonic.style.width = "60px";
+        sonic.style.bottom="-1px"
+               
         clearInterval(loop);     
-    };
-
-    if(vilaoPosition <= 0){
-
-        pontos++;
-    };
+    };  
+    
+    
     
 
-
 }, 10);
-
-
 
 // addEventListener para captura de eventos / passando como parametros o evento e a função
 tela();
