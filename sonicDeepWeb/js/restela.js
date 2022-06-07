@@ -1,3 +1,5 @@
+// Função para detectar largura da tela e retornar evento conforme responsividade;
+
 function tela() {
     if (window.matchMedia("(min-width:745px)").matches) {
         /* a viewport tem pelo menos 745 pixels de largura */

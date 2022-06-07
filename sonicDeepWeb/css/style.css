@@ -58,9 +58,13 @@ canvas {
     position: absolute;
     bottom: 0px;
     width: 100px;
-    animation: vilao-animation 1.2s infinite linear;
+    animation: vilao-animation 5s infinite linear;
 
 
+}
+
+.vilaovelox2{
+    animation: vilao-animation2 1.2s infinite linear;
 }
 
 .sonic {
@@ -74,9 +78,6 @@ canvas {
     animation: sonic-jump 500ms ease-out;
 }
 
-.jump2 {
-    animation: sonic-jump 500ms ease-out;
-}
 
 .bruxa {
     position: absolute;
@@ -121,6 +122,16 @@ canvas {
 /*Início animações*/
 
 @keyframes vilao-animation {
+    from {
+        right: -3000px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes vilao-animation2{
     from {
         right: -200px;
     }

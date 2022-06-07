@@ -6,13 +6,13 @@ const vilao = document.querySelector('.vilao');
 let btn = document.querySelector(".iniciar");
 if (window.matchMedia("(min-width:745px)").matches) {
     /* a viewport tem pelo menos 745 pixels de largura */
-    btn.addEventListener("click", function() {
+    btn.addEventListener("click", function () {
 
         location.reload();
     });
 } else {
     /* a viewport menos que 800 pixels de largura */
-    btn.addEventListener("touchstart", function() {
+    btn.addEventListener("touchstart", function () {
 
         location.reload();
     });
@@ -20,17 +20,17 @@ if (window.matchMedia("(min-width:745px)").matches) {
 
 //função jump
 const jump = () => {
-    sonic.classList.add('jump');  
-    
-    pontos += 10;
-        
+    sonic.classList.add('jump');
+
+
     setTimeout(() => {
 
         sonic.classList.remove('jump');
 
-    }, 500);      
 
-    
+    }, 500);
+
+
 };
 
 // capturar colisão entre os elementos
@@ -39,23 +39,42 @@ const loop = setInterval(function colisao(ctx) {
 
     const vilaoPosition = vilao.offsetLeft;
     const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
-    
 
-    if (vilaoPosition <= 190 && vilaoPosition > 0 && sonicPosition <160) {
+
+    if (vilaoPosition <= 190 && vilaoPosition > 0 && sonicPosition < 160) {
         //para o jogo
         vilao.style.animation = 'none';
+        sonic.style.animation = 'none';
+
         vilao.style.left = `${vilaoPosition}px`;
         sonic.style.left = `${50}px`;
-        
-        sonic.src="./medea/sonicshutdown.gif";
+
+        // Altera o boneco do sonic
+        sonic.src = "./medea/sonicshutdown.gif";
         sonic.style.width = "60px";
-        sonic.style.bottom="-1px"
-               
-        clearInterval(loop);     
-    };  
-    
-    
-    
+        sonic.style.bottom = "-1px"
+
+        clearInterval(loop);
+    };
+
+    // alternando as velocidade do vilao / nível de dificuldade
+
+    if (vilaoPosition <= 0) {
+        pontos++;
+    };
+
+    if (pontos == 20) {
+        vilao.style.animation = 'vilao-animation 3s infinite linear';
+    } 
+    else if (pontos == 50) {
+        vilao.style.animation = 'vilao-animation 2s infinite linear';
+    }
+    else if (pontos == 100) {
+        vilao.classList.add('vilaovelox2');
+        vilao.style.animation = 'vilao-animation2 0.5s infinite linear'
+    };
+
+
 
 }, 10);
 

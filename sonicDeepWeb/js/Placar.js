@@ -23,8 +23,9 @@ class Placar {
     };
         
 };
-
+// Método para contar a pontuação;
 function pontuar(){
-    
+    // reservado para nova condição de pontuação;
 }
+
 
