@@ -189,7 +189,7 @@ canvas {
 
     .game-board {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         border-bottom: 20px solid rgb(35, 168, 35);
         background: linear-gradient(#87CEEB, #E0F6FF);
         margin: 0 auto;
