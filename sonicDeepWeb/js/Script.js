@@ -55,7 +55,8 @@ if (window.matchMedia("(min-width:745px)").matches) {
             // Altera o boneco do sonic
             sonic.src = "./medea/sonicshutdown.gif";
             sonic.style.width = "60px";
-            sonic.style.bottom = "-2px"   
+            sonic.style.bottom = "-2px"  
+            // substitui animação do sonic 
             sonic.classList.remove('jump'); 
             sonic.classList.add('sonicdead');        
             sonic.style.animation = 'animation: sonic-dead 20s';
@@ -76,9 +77,21 @@ if (window.matchMedia("(min-width:745px)").matches) {
             vilao.style.animation = 'vilao-animation 2s infinite linear';
         }
         else if (pontos == 100) {
+            vilao.style.animation = 'vilao-animation 1.5s infinite linear';
+        }
+        else if (pontos == 150) {
             vilao.classList.add('vilaovelox2');
-            vilao.style.animation = 'vilao-animation2 0.5s infinite linear'
-        };
+            vilao.style.animation = 'vilao-animation2 1s infinite linear';     
+                       
+        } 
+        else if(pontos == 200){
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.8s infinite linear'; 
+        }
+        else if(pontos == 250){
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.65s infinite linear'; 
+        }
 
 
 
@@ -107,6 +120,7 @@ else {
             sonic.src = "./medea/sonicshutdown.gif";
             sonic.style.width = "60px";
             sonic.style.bottom = "-2px"
+            // substitui animação do sonic
             sonic.classList.remove('jump'); 
             sonic.classList.add('sonicdead');        
             sonic.style.animation = 'animation: sonic-dead 20s';
@@ -136,7 +150,7 @@ else {
     }, 10);
 }
 
-// addEventListener para captura de eventos / passando como parametros o evento e a função
+// Função para captura de eventos / passando como parametros o evento e a função
 tela();
 
 

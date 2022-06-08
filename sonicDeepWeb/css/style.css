@@ -78,6 +78,7 @@ canvas {
     animation: sonic-jump 500ms ease-out;
 }
 
+
 .sonicdead{
 
     animation: sonic-dead 20s;
