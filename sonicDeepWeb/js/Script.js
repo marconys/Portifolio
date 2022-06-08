@@ -4,14 +4,14 @@ const vilao = document.querySelector('.vilao');
 // verifica o tamanho da tela antes da captura do evento e Recarrega a pagina "refresh" (reinícia o jogo) 
 
 let btn = document.querySelector(".iniciar");
-if (window.matchMedia("(min-width:745px)").matches) {
-    /* a viewport tem pelo menos 745 pixels de largura */
+if (window.matchMedia("(min-width:800px)").matches) {
+    // a viewport tem pelo menos 800 pixels de largura 
     btn.addEventListener("click", function () {
 
         location.reload();
     });
 } else {
-    /* a viewport menos que 800 pixels de largura */
+    // a viewport menos que 800 pixels de largura
     btn.addEventListener("touchstart", function () {
 
         location.reload();
@@ -34,7 +34,7 @@ const jump = () => {
 };
 
 // Verifica o tamanho da tela e aplica as posições dos personagens conforme o dispositivo
-if (window.matchMedia("(min-width:745px)").matches) {
+if (window.matchMedia("(min-width:800px)").matches) {
     
 
     // capturar colisão entre os elementos dispositivo desktop
