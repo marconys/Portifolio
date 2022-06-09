@@ -1,4 +1,4 @@
-let music = document.querySelector('.musca');
+let music = document.querySelector('.musica');
 
 
 if (window.matchMedia("(min-width:745px)").matches) {

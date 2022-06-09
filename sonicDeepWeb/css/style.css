@@ -63,8 +63,8 @@ canvas {
 }
 
 .musica{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background: url("../medea/audioOn.png") no-repeat;
     background-size: contain;
     margin-top: 100px;
@@ -259,6 +259,35 @@ canvas {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
+    }
+
+    .iniciar {
+        cursor: pointer;
+        background-color: aqua;
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        border: 2px solid #000; 
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+
+    .musica{
+        width: 50px;
+        height: 50px;
+        background: url("../medea/audioOn.png") no-repeat;
+        background-size: contain;
+        margin-top: 100px;
+        border-radius: 50px;
+        right: 50px;
+        position: absolute;
+        cursor: pointer;
     }
 
     .sonic {
