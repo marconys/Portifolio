@@ -1,26 +1,19 @@
-let music = document.querySelector(".musica");
+let btn2 = document.querySelector(".musica");
 
 let cont = 0;
 
-
-
-if (window.matchMedia("(min-width:745px)").matches) {
-
-    music = document.addEventListener("click",musica );
-}
-else {
-    music = document.addEventListener("touchstart",musica);
-}
-
 function musica(){
-    
-    let audio = document.querySelector('audio');
+    let song = document.querySelector("audio");
     if(cont == 0){
         cont = 1;
-        audio.play();
+        song.play();        
+        //btn2.style.background = "url('../medea/audioOn.png')";
+        
     }
     else{
         cont = 0;
-        audio.pause();
+        song.pause();
+        song.currentTime = 0
+        //btn2.style.background = "url('../medea/audioOff.png')";
     }
 }
