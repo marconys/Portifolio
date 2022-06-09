@@ -10,11 +10,14 @@
     <script src="./js/Script.js" defer></script>
     <script src="./js/Placar.js"></script>
     <script src="./js/restela.js"></script>
-
+    <script src="./js/audio.js"></script>
+    
     <title>Sonic DeepWeb</title>
 </head>
 
-<body>
+<body>    
+    
+        <audio src="./medea/audios/FunkdaDeepWebOriginal.mp3" autoplay loop></audio>
     <div class="game-board">
 
         <div class="nuvens">
@@ -30,8 +33,11 @@
         <div id="cabecalho">
 
             <div id="iniciar">
-                <botton class="iniciar">PLAY</botton>
+                <button class="iniciar">PLAY</button>                
             </div>
+
+            <button class="musica"></button>
+            
 
             <canvas id="game-board">
 

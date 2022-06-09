@@ -18,6 +18,8 @@ if (window.matchMedia("(min-width:745px)").matches) {
     });
 }
 
+
+
 //função jump
 const jump = () => {
     sonic.classList.add('jump');
