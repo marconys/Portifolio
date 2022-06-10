@@ -20,3 +20,12 @@ function musica() {
         btn2.classList.add('stop');
     }
 }
+
+function reinicia(){
+
+    let btn = document.querySelector(".iniciar");
+    btn.addEventListener("click", function () {
+
+        location.reload();
+    });
+}

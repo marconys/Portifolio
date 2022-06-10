@@ -1,9 +1,10 @@
 const sonic = document.querySelector('.sonic');
 const vilao = document.querySelector('.vilao');
 
-// verifica o tamanho da tela antes da captura do evento e Recarrega a pagina "refresh" (reinícia o jogo) 
+// verifica o tamanho da tela antes da captura do evento e Recarrega a pagina "refresh" (reinícia o jogo)
+// Quando o usuário clica no botão play 
 
-let btn = document.querySelector(".iniciar");
+/*let btn = document.querySelector(".iniciar");
 if (window.matchMedia("(min-width:745px)").matches) {
     // a viewport tem pelo menos 745 pixels de largura 
     btn.addEventListener("click", function () {
@@ -18,9 +19,10 @@ if (window.matchMedia("(min-width:745px)").matches) {
     });
 }
 
+*/
 
 
-//função jump
+//função que faz o sonic pular
 const jump = () => {
     sonic.classList.add('jump');
 
@@ -36,7 +38,7 @@ const jump = () => {
 };
 
 // Verifica o tamanho da tela e aplica as posições dos personagens conforme o dispositivo
-if (window.matchMedia("(min-width:745px)").matches) {
+/*if (window.matchMedia("(min-width:745px)").matches) { */
     
 
     // capturar colisão entre os elementos dispositivo desktop
@@ -98,8 +100,8 @@ if (window.matchMedia("(min-width:745px)").matches) {
 
 
     }, 10);
-
-}
+/*
+} 
 else {    
 
     // capturar colisão entre os elementos dispositivo desktop mobile
@@ -151,6 +153,8 @@ else {
 
     }, 10);
 }
+
+*/
 
 // Função para captura de eventos / passando como parametros o evento e a função
 tela();
