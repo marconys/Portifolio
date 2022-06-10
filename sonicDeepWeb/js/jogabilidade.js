@@ -75,7 +75,7 @@ if (window.matchMedia("(min-width:745px)").matches) {
 }
 else {
 
-    // capturar colisão entre os elementos dispositivo desktop mobile
+    // capturar colisão entre os elementos dispositivo mobile
     const loop = setInterval(function colisao(ctx) {
 
         const vilaoPosition = vilao.offsetLeft;
