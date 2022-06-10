@@ -5,73 +5,122 @@ const vilao = document.querySelector('.vilao');
 function jump() {
     sonic.classList.add('jump');
 
-    setTimeout(() => {
+    setTimeout(() => { // remove a função jump.
 
         sonic.classList.remove('jump');
 
     }, 500);
+
 };
 
-// capturar colisão entre os elementos
-const loop = setInterval(function colisao(ctx) {
+// Verifica o tamanho da tela e define as posições dos personagens e de colisão conforme o dispositivo
+if (window.matchMedia("(min-width:745px)").matches) {
 
-    const vilaoPosition = vilao.offsetLeft;
-    const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
+    // capturar colisão entre os elementos dispositivo desktop
+    const loop = setInterval(function colisao(ctx) {
 
+        const vilaoPosition = vilao.offsetLeft;
+        const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
 
-    if (vilaoPosition <= 190 && vilaoPosition > 0 && sonicPosition < 160) {
         //para o jogo
-        vilao.style.animation = 'none';
+        if (vilaoPosition <= 190 && vilaoPosition > 0 && sonicPosition < 160) {
 
-        vilao.style.left = `${vilaoPosition}px`;
-        sonic.style.left = `${1}px`;
+            vilao.style.animation = 'none';
 
-        // Altera o boneco do sonic
-        sonic.src = "./medea/sonicshutdown.gif";
-        sonic.style.width = "60px";
-        sonic.style.bottom = "-2px"
-        // substitui animação do sonic 
-        sonic.classList.remove('jump');
-        sonic.classList.add('sonicdead');
-        sonic.style.animation = 'animation: sonic-dead 20s';
+            vilao.style.left = `${vilaoPosition}px`;
+            sonic.style.left = `${1}px`;
 
-        clearInterval(loop);
-    };
+            // Altera o boneco do sonic
+            sonic.src = "./medea/sonicshutdown.gif";
+            sonic.style.width = "60px";
+            sonic.style.bottom = "-2px"
+            // substitui animação do sonic 
+            sonic.classList.remove('jump');
+            sonic.classList.add('sonicdead');
+            sonic.style.animation = 'animation: sonic-dead 20s';
 
-    // alternando as velocidade do vilao / nível de dificuldade
+            clearInterval(loop);
+        };
 
-    if (vilaoPosition <= 0) {
-        pontos++;
-    };
+        // alternando as velocidade do vilao / nível de dificuldade
+        if (vilaoPosition <= 0) {
+            pontos++;
+        };
 
-    if (pontos == 20) {
-        vilao.style.animation = 'vilao-animation 3s infinite linear';
-    }
-    else if (pontos == 50) {
-        vilao.style.animation = 'vilao-animation 2s infinite linear';
-    }
-    else if (pontos == 100) {
-        vilao.style.animation = 'vilao-animation 1.5s infinite linear';
-    }
-    else if (pontos == 150) {
-        vilao.classList.add('vilaovelox2');
-        vilao.style.animation = 'vilao-animation2 1s infinite linear';
+        if (pontos == 20) {
+            vilao.style.animation = 'vilao-animation 3s infinite linear';
+        }
+        else if (pontos == 50) {
+            vilao.style.animation = 'vilao-animation 2s infinite linear';
+        }
+        else if (pontos == 100) {
+            vilao.style.animation = 'vilao-animation 1.5s infinite linear';
+        }
+        else if (pontos == 150) {
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 1s infinite linear';
 
-    }
-    else if (pontos == 200) {
-        vilao.classList.add('vilaovelox2');
-        vilao.style.animation = 'vilao-animation2 0.8s infinite linear';
-    }
-    else if (pontos == 250) {
-        vilao.classList.add('vilaovelox2');
-        vilao.style.animation = 'vilao-animation2 0.65s infinite linear';
-    }
+        }
+        else if (pontos == 200) {
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.8s infinite linear';
+        }
+        else if (pontos == 250) {
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.65s infinite linear';
+        }
+
+    }, 10);
+
+}
+else {
+
+    // capturar colisão entre os elementos dispositivo desktop mobile
+    const loop = setInterval(function colisao(ctx) {
+
+        const vilaoPosition = vilao.offsetLeft;
+        const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
+
+        //para o jogo
+        if (vilaoPosition <= 50 && vilaoPosition > 0 && sonicPosition < 160) {
+
+            vilao.style.animation = 'none';
 
 
+            vilao.style.left = `${vilaoPosition}px`;
+            sonic.style.left = `${1}px`;
 
-}, 10);
+            // Altera o boneco do sonic
+            sonic.src = "./medea/sonicshutdown.gif";
+            sonic.style.width = "60px";
+            sonic.style.bottom = "-2px"
+            // substitui animação do sonic
+            sonic.classList.remove('jump');
+            sonic.classList.add('sonicdead');
+            sonic.style.animation = 'animation: sonic-dead 20s';
 
+            clearInterval(loop);
+        };
 
+        // alternando as velocidade do vilao / nível de dificuldade
+        if (vilaoPosition <= 0) {
+            pontos++;
+        };
+
+        if (pontos == 20) {
+            vilao.style.animation = 'vilao-animation 3s infinite linear';
+        }
+        else if (pontos == 50) {
+            vilao.style.animation = 'vilao-animation 2s infinite linear';
+        }
+        else if (pontos == 100) {
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.5s infinite linear'
+        };
+
+    }, 10);
+
+}
 // Função para captura de eventos / retorna o evento conforme o tamanho da tela
 tela();
 
