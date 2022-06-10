@@ -1,19 +1,22 @@
-let btn2 = document.querySelector(".musica");
-
 let cont = 0;
 
-function musica(){
+function musica() {
+
     let song = document.querySelector("audio");
-    if(cont == 0){
+    let btn2 = document.querySelector(".musica");
+
+
+    if (cont == 0) { // Toca a musica
         cont = 1;
-        song.play();        
-        //btn2.style.background = "url('../medea/audioOn.png')";
-        
+        song.play();
+        btn2.classList.remove('stop');
+        btn2.classList.add('musica');
+
     }
-    else{
+    else { // Dar stop na musica
         cont = 0;
         song.pause();
         song.currentTime = 0
-        //btn2.style.background = "url('../medea/audioOff.png')";
+        btn2.classList.add('stop');
     }
 }
