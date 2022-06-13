@@ -25,7 +25,12 @@ class Placar {
 };
 // Método para contar a pontuação;
 function pontuar(){
-    // reservado para nova condição de pontuação;
+    pontos += 10;
 }
+
+let tmp;
+
+tmp = setInterval(pontuar, 3000);
+
 
 

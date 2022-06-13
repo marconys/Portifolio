@@ -40,12 +40,11 @@ if (window.matchMedia("(min-width:745px)").matches) {
             sonic.style.animation = 'animation: sonic-dead 20s';
 
             clearInterval(loop);
+            clearInterval(tmp);
         };
 
         // alternando as velocidade do vilao / nível de dificuldade
-        if (vilaoPosition <= 0) {
-            pontos++;
-        };
+       
 
         if (pontos == 20) {
             vilao.style.animation = 'vilao-animation 3s infinite linear';
@@ -63,11 +62,11 @@ if (window.matchMedia("(min-width:745px)").matches) {
         }
         else if (pontos == 200) {
             vilao.classList.add('vilaovelox2');
-            vilao.style.animation = 'vilao-animation2 0.8s infinite linear';
+            vilao.style.animation = 'vilao-animation2 0.9s infinite linear';
         }
         else if (pontos == 250) {
             vilao.classList.add('vilaovelox2');
-            vilao.style.animation = 'vilao-animation2 0.65s infinite linear';
+            vilao.style.animation = 'vilao-animation2 0.8s infinite linear';
         }
 
     }, 10);
@@ -100,12 +99,10 @@ else {
             sonic.style.animation = 'animation: sonic-dead 20s';
 
             clearInterval(loop);
+            clearInterval(tmp);
         };
 
-        // alternando as velocidade do vilao / nível de dificuldade
-        if (vilaoPosition <= 0) {
-            pontos++;
-        };
+        // alternando as velocidade do vilao / nível de dificuldade        
 
         if (pontos == 20) {
             vilao.style.animation = 'vilao-animation 3s infinite linear';
@@ -114,9 +111,21 @@ else {
             vilao.style.animation = 'vilao-animation 2s infinite linear';
         }
         else if (pontos == 100) {
+            vilao.style.animation = 'vilao-animation 1.5s infinite linear';
+        }
+        else if (pontos == 150) {
             vilao.classList.add('vilaovelox2');
-            vilao.style.animation = 'vilao-animation2 0.5s infinite linear'
-        };
+            vilao.style.animation = 'vilao-animation2 1s infinite linear';
+
+        }
+        else if (pontos == 200) {
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.9s infinite linear';
+        }
+        else if (pontos == 250) {
+            vilao.classList.add('vilaovelox2');
+            vilao.style.animation = 'vilao-animation2 0.8s infinite linear';
+        }
 
     }, 10);
 
