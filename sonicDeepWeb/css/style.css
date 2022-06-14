@@ -92,13 +92,9 @@ canvas {
     position: absolute;
     bottom: 0px;
     width: 100px;
-    animation: vilao-animation 5s infinite linear;
+    animation: vilao-animation 3s infinite linear;
 
 
-}
-
-.vilaovelox2{
-    animation: vilao-animation2 1.2s infinite linear;
 }
 
 .sonic {

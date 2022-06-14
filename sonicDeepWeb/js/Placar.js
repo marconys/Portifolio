@@ -30,7 +30,7 @@ function pontuar(){
 
 let tmp;
 
-tmp = setInterval(pontuar, 3000);
+tmp = setInterval(pontuar, 2000);
 
 
 
