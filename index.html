@@ -1,204 +1,213 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Meu Portfólio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/foto.webp" />
+  </head>
 
-<head>
-  <title>Meu Portfólio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <body>
+    <!--Botão WhatsApp-->
+    <a class="whatsapp-link" href="https://wa.me/5511959816510" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
 
-<body>
+    <!-- navbar -->
+    <header id="navbar">
+      <img src="./img/foto.webp" alt="Estrela Ninja" />
+      <h2>Marconys Pinheiro</h2>
+      <nav>
+        <ul id="navbar-list">
+          <li><a href="#main-banner">Home</a></li>
+          <li><a href="#skills-section">Sobre</a></li>
+          <li><a href="#jobs-section">Projetos</a></li>
+          <li><a href="#contato-section">Contato</a></li>
+        </ul>
+      </nav>
 
-  <!--Botão WhatsApp-->
-  <a class="whatsapp-link" href="https://wa.me/5511959816510" target="_blank">
-    <i class="fa fa-whatsapp"></i>
-  </a>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
 
-  <!-- navbar -->
-  <header id="navbar">
-    <img src="./img/foto.png" alt="Estrela Ninja">
-    <h2>Marconys Pinheiro</h2>
-    <nav>
-      <ul id="navbar-list">
-        <li><a href="#main-banner">Home</a></li>
-        <li><a href="#skills-section">Sobre</a></li>
-        <li><a href="#jobs-section">Projetos</a></li>
-        <li><a href="#contato-section">Contato</a></li>
-      </ul>
-    </nav>
-
-    <div class="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__btn" for="menu__toggle">
-        <span></span>
-      </label>
-
-      <ul class="menu__box">
-        <li><a class="menu__item" href="#main-banner">Home</a></li>
-        <li><a class="menu__item" href="#skills-section">Sobre</a></li>
-        <li><a class="menu__item" href="#jobs1-section">Projetos</a></li>
-        <li><a class="menu__item" href="#contato-section">Contato</a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- fim navbar -->
-  <main>
-    <!-- banner início -->
-    <div id="main-banner">
-      <div id="banner-info">
-        <h1>Olá, eu sou Marconys Pinheiro</h1>
-        <img src="./img/batea.jpg" alt="Perfil batera">
-        <p>O batera da programação</p>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#main-banner">Home</a></li>
+          <li><a class="menu__item" href="#skills-section">Sobre</a></li>
+          <li><a class="menu__item" href="#jobs1-section">Projetos</a></li>
+          <li><a class="menu__item" href="#contato-section">Contato</a></li>
+        </ul>
       </div>
-    </div>
-    <!-- banner fim -->
-    <!-- about inicio -->
-    <section id="about-section">
-      <h2>Sobre o meu jeito batera de ser</h2>
-      <p>Olá, eu sou o Marconys, seja muito bem-vindo a minha page!
-        Sou apaixonado por musica e programação, pois as duas áreas proporcionam-me
-        usar a minha imaginação, seja na criação de entretenimento, seja eleborando
-        uma solução para problemas do nosso dia-a-dia.
-      </p>
-    </section>
-    <!-- about fim -->
-  </main>
-  <!-- skills inicio -->
-  <section id="skills-section">
-    <div class="container">
-      <div class="skills-container esquerda">
-        <img src="./img/caixa.png" alt="caixa">
-        <h3>Desenvolvimento</h3>
-        <p>Minha maior paixão é desenvolver projetos web, desktop e mobile</p>
-        <p class="subtitle">Linguagens que utilizo:</p>
-        <p>HTML, CSS, JS, PHP, C++ e C#</p>
-        <p class="subtitle">Projetos que posso desenvolver:</p>
-        <p>E-commerces, Sites institucionais, Aplicativos para desktop e mobile</p>
+    </header>
+    <!-- fim navbar -->
+    <main>
+      <!-- banner início -->
+      <div id="main-banner">
+        <div id="banner-info">
+          <h1>Olá, eu sou Marconys Pinheiro</h1>
+          <img src="./img/batea.webp" alt="Perfil batera" />
+          <p>O batera da programação</p>
+        </div>
       </div>
-      <div class="skills-container central">
-        <img src="./img/drummer.png" alt="drummer">
-        <h3>Criação</h3>
-        <p>Atuo também na análise e gerenciamento de projetos</p>
-        <p class="subtitle">Meus conhecimentos:</p>
-        <p>Assistente de Suporte e Manutenção de Computadores, Assistente de Operação de Redes de Computadores,
-          Assistente de Desenvolvimento de Aplicativos
-          Computacionais
+      <!-- banner fim -->
+      <!-- about inicio -->
+      <section id="about-section">
+        <h2>Sobre o meu jeito batera de ser</h2>
+        <p>
+          Olá, eu sou o Marconys, seja muito bem-vindo a minha page! Sou
+          apaixonado por musica e programação, pois as duas áreas
+          proporcionam-me usar a minha imaginação, seja na criação de
+          entretenimento, seja eleborando uma solução para problemas do nosso
+          dia-a-dia.
         </p>
+      </section>
+      <!-- about fim -->
+    </main>
+    <!-- skills inicio -->
+    <section id="skills-section">
+      <div class="container">
+        <div class="skills-container esquerda">
+          <img src="./img/caixa.webp" alt="caixa" />
+          <h3>Desenvolvimento</h3>
+          <p>Minha maior paixão é desenvolver projetos web, desktop e mobile</p>
+          <p class="subtitle">Linguagens que utilizo:</p>
+          <p>HTML, CSS, JS, PHP, C++ e C#</p>
+          <p class="subtitle">Projetos que posso desenvolver:</p>
+          <p>
+            E-commerces, Sites institucionais, Aplicativos para desktop e mobile
+          </p>
+        </div>
+        <div class="skills-container central">
+          <img src="./img/drummer.webp" alt="drummer" />
+          <h3>Criação</h3>
+          <p>Atuo também na análise e gerenciamento de projetos</p>
+          <p class="subtitle">Meus conhecimentos:</p>
+          <p>
+            Assistente de Suporte e Manutenção de Computadores, Assistente de
+            Operação de Redes de Computadores, Assistente de Desenvolvimento de
+            Aplicativos Computacionais
+          </p>
+        </div>
+        <div class="skills-container direita">
+          <img src="./img/prato.webp" alt="Weapons" />
+          <h3>Infraestrutura</h3>
+          <p>
+            Posso Planejar e executar a instalação e manutenção de redes locais
+            de computadores, assim como executar a instalação, configuração e
+            monitoramento de servidores..
+          </p>
+          <p class="subtitle">Servidor Firewall:</p>
+          <p>pfsense, Mikrotik, IPTABLES</p>
+          <p class="subtitle">O que posso fazer:</p>
+          <p>
+            Executar os processos de codificação manutenção e documentação de
+            aplicativos computacionais para desktop, dispositivos móveis e
+            internet.
+          </p>
+        </div>
       </div>
-      <div class="skills-container direita">
-        <img src="./img/prato.png" alt="Weapons">
-        <h3>Infraestrutura</h3>
-        <p>Posso Planejar e executar a instalação e manutenção
-          de redes locais de computadores, assim como executar a instalação, configuração
-          e monitoramento de servidores..</p>
-        <p class="subtitle">Servidor Firewall:</p>
-        <p>pfsense, Mikrotik, IPTABLES</p>
-        <p class="subtitle">O que posso fazer:</p>
-        <p>Executar os processos de codificação manutenção
-          e documentação de aplicativos computacionais
-          para desktop, dispositivos móveis e internet.</p>
+    </section>
+    <!-- skills fim -->
+    <!-- jobs inicio -->
+    <section id="jobs-section">
+      <h2>Veja meus últimos trabalhos:</h2>
+      <p>
+        Aqui estão os meus trabalhos mais rescentes, para ver todos
+        <a href="https://github.com/marconys">clique aqui.</a>
+      </p>
+      <div class="job-container">
+        <div class="job-box proj1 slide">
+          <a href="./sonicDeepWeb/index.html" target="_blank"
+            ><h1>Game Sonic DeepWeb</h1></a
+          >
+        </div>
+        <div class="job-box proj2 slide">
+          <a href="https://desentupidorarb.com.br/" target="_blank"
+            ><h1>Site Desentupidora RB</h1></a
+          >
+        </div>
+        <div class="job-box proj3 slide">
+          <a href="https://www.tecnoo.net/" target="_blank"
+            ><h1>HelpDesk Tecnoo</h1></a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- skills fim -->
-  <!-- jobs inicio -->
-  <section id="jobs-section">
-    <h2>Veja meus últimos trabalhos:</h2>
-    <p>Aqui estão os meus trabalhos mais rescentes, para ver todos <a href="https://github.com/marconys">clique
-        aqui.</a></p>
-    <div class="job-container">
-      <div class="job-box proj1 slide1"><a href="./sonicDeepWeb/index.html"><h1>MiniGame Sonic DeepWeb</h1></a></div>
-      <div class="job-box proj2 slide"></div>
-      <div class="job-box proj3 slide"></div>
-    </div>
-    <div class="job-container">
-      <div class="job-box proj2 slide"></div>
-      <div class="job-box proj3 slide"></div>
-      <div class="job-box proj1 slide6"><a href="./PingPong/index.html"><h1>MiniGame Ping Pong</h1></a></div>
-    </div>
-  </section>
-  <!-- jobs fim -->
-  <!-- jobs1 inicio -->
-  <section id="jobs1-section">
-    <h2>Veja meus últimos trabalhos:</h2>
-    <p>Aqui estão os meus trabalhos mais rescentes, para ver todos <a href="https://github.com/marconys">clique
-        aqui.</a></p>
+    </section>
+    <!-- jobs fim -->
+    <!-- jobs1 inicio -->
+    <section id="jobs1-section">
+      <h2>Veja meus últimos trabalhos:</h2>
+      <p>
+        Aqui estão os meus trabalhos mais rescentes, para ver todos
+        <a href="https://github.com/marconys">clique aqui.</a>
+      </p>
 
-    <div class="jobs1-boxmain">
-
-      <div class="job1-container">
-        <a href="#slide-1">1</a>
-        <a href="#slide-2">2</a>
-        <a href="#slide-3">3</a>
-        <a href="#slide-4">4</a>
-        <a href="#slide-5">5</a>
-        <a href="#slide-6">6</a>
-
-        <div class="container-box">
-
-          <div id="slide-1">
-            <img src="./img/sonicdeepweb.gif" alt="">  
-            <h1>MiniGame Sonic DeepWeb</h1>          
+      <div class="jobs1-boxmain">
+        <div class="job1-container">
+          <div class="carolsel">
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
           </div>
 
-          <div id="slide-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/1937_Riley_Sprite_%282%29.jpg/640px-1937_Riley_Sprite_%282%29.jpg"
-              alt="">
-          </div>
+          <div class="container-box">
+            <div id="slide-1">
+              <img src="./img/gameSonicDeepweb.webp" alt="Game Sonic DeepWeb" />
+              <button><a href="./sonicDeepWeb/index.html" target="_blank">Game Sonic DeepWeb</a></button>
+            </div>
 
-          <div id="slide-3">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/MHV_Austin_Healey_Sprite_01.jpg/640px-MHV_Austin_Healey_Sprite_01.jpg"
-              alt="">
-          </div>
+            <div id="slide-2">
+              <img src="img/desentupidorarb.webp" alt="Site Desentupidora RB" />
+              <button><a href="https://desentupidorarb.com.br/" target="_blank">Site Desentupidora RB</a></button>
+            </div>
 
-          <div id="slide-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Austin-Healey_Sprite_MK1.JPG/640px-Austin-Healey_Sprite_MK1.JPG"
-              alt="">
-          </div>
+            <div id="slide-3">
+              
+              <img src="img/tecnoo.webp" alt="Site Desentupidora RB" />
+              <button><a href="https://www.tecnoo.net/" target="_blank">HelpDesk Tecnoo</a></button> 
+            </div>
 
-          <div id="slide-5">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/1937_Riley_Lynx-Sprite_%2840444780000%29.jpg/640px-1937_Riley_Lynx-Sprite_%2840444780000%29.jpg"
-              alt="">
-          </div>
-
-          <div id="slide-6">
-            <img
-              src="./img/pingpong.PNG" alt="">
-              <h1>MiniGame Ping Pong</h1>
+            <div id="slide-4">
+            <img src="img/pingpong.webp" alt="MiniGame Ping Pong" /></a>
+            <button><a href="PingPong/index.html" target="_blank">MiniGame Ping Pong</a></button>
+            </div>
           </div>
         </div>
       </div>
-
-
-
-    </div>
-  </section>
-  <!-- jobs1 fim -->
-  <!-- footer inicio -->
-  <footer>
-    <section id="contato-section">
-      <h2>Me mande uma mensagem</h2>
-      <p>Caso queira falar sobre algum projeto, me contratar para algum serviço, ou falar sobre bateria...</p>
-      <img src="./img/foto.png" alt="Perfil foto">
-      <form action="https://formsubmit.co/marconysbatera@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Seu nome">
-        <input type="email" name="email" placeholder="Seu e-mail">
-        <textarea name="msg" placeholder="Digite uma mensagem"></textarea>
-        <input type="hidden" name="_next" value="https://marconys.github.io/Portifolio/">
-        <input type="hidden" name="_captcha" value="false">
-        <button id="enviar" type="submit">Enviar</button>
-      </form>
-      <span class="detail">&copy; Copyright Desenvolvido por Marconys Pinheiro - AlunoTI91</span>
     </section>
-
-  </footer>
-  <!-- footer fim -->
-  
-</body>
-
+    <!-- jobs1 fim -->
+    <!-- footer inicio -->
+    <footer>
+      <section id="contato-section">
+        <h2>Me mande uma mensagem</h2>
+        <p>
+          Caso queira falar sobre algum projeto, me contratar para algum
+          serviço, ou falar sobre bateria...
+        </p>
+        <img src="./img/foto.webp" alt="Perfil foto" />
+        <form
+          action="https://formsubmit.co/marconysbatera@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Seu nome" />
+          <input type="email" name="email" placeholder="Seu e-mail" />
+          <textarea name="msg" placeholder="Digite uma mensagem"></textarea>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://marconys.github.io/Portifolio/"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+        <span class="detail"
+          >&copy; Copyright Desenvolvido por Marconys Pinheiro - AlunoTI91</span
+        >
+      </section>
+    </footer>
+    <!-- footer fim -->
+  </body>
 </html>

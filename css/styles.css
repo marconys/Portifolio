@@ -112,7 +112,7 @@ html {
 /* banner */
 #main-banner {
   height: 70vh;
-  background-image: url("../img/banner.jpg");
+  background-image: url("../img/banner.webp");
   background-size: cover;
   padding-top: 15vh;
   background-attachment: fixed;
@@ -280,38 +280,30 @@ html {
   border-bottom: 2px solid #ED1E24;
 }
 
-.slide1 {
-  background: url('../img/sonicdeepweb.gif') no-repeat;
+.proj1 {
+  background: url('../img/gameSonicDeepweb.webp') no-repeat;
+  background-position: center;
   background-size: 330px;
 }
-
-.slide1 h1 {
-  position: absolute;
-  font-family: 'Roboto';
-  font-size: 25px;
-  font-weight: 700;
-  margin: 300px 20px;
-
-}
-
 .proj2 {
-  background: url('../img/ninja.png') no-repeat;
-  background-size: 330px;
-}
-
-.proj3 {
-  background: url('../img/aviao.png') no-repeat;
-  background-size: 330px;
-  margin-left: 0;
-}
-
-.slide6{
-  background: url('../img/pingpong.PNG') no-repeat;
+  background: url('../img/desentupidorarb.webp') no-repeat;
   background-position: center;
   background-size: 330px;
 }
 
-.slide6 h1 {
+.proj3 {
+  background: url('../img/tecnoo.webp') no-repeat;
+  background-position: center;
+  background-size: 330px;
+}
+
+.proj6{
+  background: url('../img/pingpong.webp') no-repeat;
+  background-position: center;
+  background-size: 330px;
+}
+
+.slide h1 {
   position: absolute;
   font-family: 'Roboto';
   font-size: 25px;
@@ -396,7 +388,6 @@ footer .detail {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 370px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -507,7 +498,7 @@ footer .detail {
     margin-right: auto;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/montains.jpg");
+    background-image: url("../img/montains.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -548,10 +539,9 @@ footer .detail {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 300px;
-    height: 300px;
+    height: 230px;
     margin-right: 50px;
     border-radius: 10px;
-    background: #eee;
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
@@ -574,7 +564,7 @@ footer .detail {
 
   }
 
-  .job1-container a {
+  .carolsel a {
     display: inline-flex;
     width: 1.5em;
     height: 1.5em;
@@ -595,29 +585,81 @@ footer .detail {
     background: #000;
   }
 
-  #slide-1 h1 {
+  #slide-1 button {
+    background: #eee;
+    border-radius: 10px;
     position: absolute;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 15px;
-    bottom: 10px;
+    color: #ED1E24;
+    bottom: 5px;
   }
 
   #slide-1 img{
     object-fit: contain;
   }
 
-  #slide-6 h1{
+  #slide-1 a{
+    text-decoration: none;
+  }
+
+  #slide-2 button {
+    background: #eee;
+    border-radius: 10px;
     position: absolute;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 15px;
-    bottom: 10px;
+    color: #ED1E24;
+    bottom: 5px;
   }
 
-  #slide-6 img{
+  #slide-2 img{
+    object-fit: contain;
+  }
+
+  #slide-2 a{
+    text-decoration: none;
+  }
+
+  #slide-3 button {
+    background: #eee;
+    border-radius: 10px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    color: #ED1E24;
+    bottom: 5px;
+  }
+
+  #slide-3 img{
+    object-fit: contain;
+  }
+
+  #slide-3 a{
+    text-decoration: none;
+  }
+
+  #slide-4 button{
+    background: #eee;
+    border-radius: 10px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    color: #ED1E24;
+    bottom: 5px;
+  }
+
+  #slide-4 img{
     object-fit: contain;
     bottom: 300px;
+  }
+
+  #slide-4 a{
+    text-decoration: none;
   }
 
   .hamburger-menu {
