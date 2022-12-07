@@ -280,6 +280,32 @@ html {
   border-bottom: 2px solid #ED1E24;
 }
 
+/*.projects */
+
+.job-box .subtitle {
+  font-weight: bold;
+  color: #ED1E24;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  ;
+}
+
+.all-jobs {
+  text-align: center;
+  background-color: #fff;
+  color: #ED1E24;
+  font-family: 'Roboto';
+  padding-top: 15vh;
+}
+
+.all-jobs h1{
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* fim all-jobs */
+
 .proj1 {
   background: url('../img/gameSonicDeepweb.webp') no-repeat;
   background-position: center;
@@ -297,8 +323,18 @@ html {
   background-size: 330px;
 }
 
-.proj6{
+.proj4{
   background: url('../img/pingpong.webp') no-repeat;
+  background-position: center;
+  background-size: 330px;
+}
+.proj5{
+  background: url('../img/EmBreve.webp') no-repeat;
+  background-position: center;
+  background-size: 330px;
+}
+.proj6{
+  background: url('../img/EmBreve.webp') no-repeat;
   background-position: center;
   background-size: 330px;
 }

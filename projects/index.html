@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Portfólio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/ico.webp" />
+  </head>
+
+  <body>
+    <!--Botão WhatsApp-->
+    <a class="whatsapp-link" href="https://wa.me/5511959816510" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <!-- navbar -->
+    <header id="navbar">
+      <img src="../img/foto.webp" alt="Estrela Ninja" />
+      <h2>Marconys Pinheiro</h2>
+      <nav>
+        <ul id="navbar-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#skills-section">Skills</a></li>
+          <li><a href="#contato-section">Contato</a></li>
+        </ul>
+      </nav>
+      <!-- fim navbar -->
+      <!-- Início Menu Hamburger -->
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="../index.html">Home</a></li>
+          <li><a class="menu__item" href="../index.html#skills-section">Skills</a></li>
+          <li><a class="menu__item" href="#contato-section">Contato</a></li>
+        </ul>
+      </div>
+      <!-- Final Menu Hamburger -->
+    </header>
+      <div class="all-jobs">
+        <h1>Veja aqui meus últimos trabalhos</h1>
+      </div>
+    <!-- jobs inicio -->
+    <section id="jobs-section">
+      <div class="job-container">
+        <div class="job-box proj1 slide">
+          <a href="../sonicDeepWeb/index.html" target="_blank"
+            ><h1>Game Sonic DeepWeb</h1></a
+          >
+        </div>
+        <div class="job-box proj2 slide">
+          <a href="https://desentupidorarb.com.br/" target="_blank"
+            ><h1>Site Desentupidora RB</h1></a
+          >
+        </div>
+        <div class="job-box proj3 slide">
+          <a href="https://www.tecnoo.net/" target="_blank"
+            ><h1>HelpDesk Tecnoo</h1></a>
+        </div>
+      </div>
+        <div class="job-container">
+          <div class="job-box proj4 slide">
+            <a href="../PingPong/index.html" target="_blank"
+              ><h1>MiniGame Ping Pong</h1></a
+            >
+          </div>
+          <div class="job-box proj5 slide">
+            <a href="#" target="_blank"
+              ><h1>Aguardando Projeto</h1></a
+            >
+          </div>
+          <div class="job-box proj6 slide">
+            <a href="#" target="_blank"
+              ><h1>Aguardando Projeto</h1></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jobs fim -->
+    <!-- footer inicio -->
+    <footer>
+      <section id="contato-section">
+        <h2>Me mande uma mensagem</h2>
+        <p>
+          Caso queira falar sobre algum projeto, me contratar para algum
+          serviço, ou falar sobre bateria...
+        </p>
+        <img src="../img/foto.webp" alt="Perfil foto" />
+        <form
+          action="https://formsubmit.co/marconysbatera@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Seu nome" />
+          <input type="email" name="email" placeholder="Seu e-mail" />
+          <textarea name="msg" placeholder="Digite uma mensagem"></textarea>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://marconys.github.io/Portifolio/"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+        <span class="detail"
+          >&copy; Copyright Desenvolvido por Marconys Pinheiro - AlunoTI91</span
+        >
+      </section>
+    </footer>
+    <!-- footer fim -->
+  </body>
+</html>
