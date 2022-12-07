@@ -28,7 +28,7 @@ html {
   border-radius: 25px;
 
 }
-
+/* Botão whatsapp*/
 .whatsapp-link {
   position: fixed;
   width: 60px;
@@ -153,7 +153,6 @@ html {
 }
 
 /* about */
-
 #about-section {
   text-align: center;
   background-color: #ED1E24;
@@ -177,7 +176,6 @@ html {
 }
 
 /* skills */
-
 #skills-section {
   margin-top: -100px;
   background-color: #FFF;
@@ -238,7 +236,6 @@ html {
 }
 
 /* jobs */
-
 #jobs-section {
   text-align: center;
   padding-top: 50px;
@@ -280,8 +277,7 @@ html {
   border-bottom: 2px solid #ED1E24;
 }
 
-/*.projects */
-
+/*jobs.projects */
 .job-box .subtitle {
   font-weight: bold;
   color: #ED1E24;
@@ -303,8 +299,6 @@ html {
   font-size: 30px;
   font-weight: 700;
 }
-
-/* fim all-jobs */
 
 .proj1 {
   background: url('../img/gameSonicDeepweb.webp') no-repeat;
@@ -695,6 +689,46 @@ footer .detail {
   }
 
   #slide-4 a{
+    text-decoration: none;
+  }
+
+  #slide-5 button{
+    background: #eee;
+    border-radius: 10px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    color: #ED1E24;
+    bottom: 5px;
+  }
+
+  #slide-5 img{
+    object-fit: contain;
+    bottom: 300px;
+  }
+
+  #slide-5 a{
+    text-decoration: none;
+  }
+
+  #slide-6 button{
+    background: #eee;
+    border-radius: 10px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    color: #ED1E24;
+    bottom: 5px;
+  }
+
+  #slide-6 img{
+    object-fit: contain;
+    bottom: 300px;
+  }
+
+  #slide-6 a{
     text-decoration: none;
   }
 
